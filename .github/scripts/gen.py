@@ -156,7 +156,7 @@ def featured(stat="1,000+", stat_label="AID POINTS MAPPED"):
 <image clip-path="url(#img)" x="{ix}" y="{iy}" width="{iw}" height="{ih}" preserveAspectRatio="xMidYMid slice" href="data:image/jpeg;base64,{img}" xlink:href="data:image/jpeg;base64,{img}"/>
 <rect x="{ix + .5}" y="{iy + .5}" width="{iw - 1}" height="{ih - 1}" rx="14" fill="none" stroke="#ffffff" stroke-opacity="0.08"/>
 <circle class="live" cx="{tx + 5}" cy="50" r="4" fill="{ACC2}"/>
-<text x="{tx + 18}" y="54" font-family="{MONO}" font-size="12" fill="{MUTED}" letter-spacing="1.5">FEATURED · LIVE</text>
+<text x="{tx + 18}" y="54" font-family="{MONO}" font-size="12" fill="{MUTED}" letter-spacing="1.5">FEATURED</text>
 <text x="{tx}" y="104" font-family="{SANS}" font-size="32" font-weight="750" fill="{TEXT}" letter-spacing="-1">Unidos por Colombia</text>
 {lines(tx, 140, ["A collaborative map of aid points for the", "people hit by the August 2026 earthquake.", "Built in days, with friends, for strangers."], 15.5, MUTED, 24)}
 <text x="{tx}" y="262" font-family="{SANS}" font-size="44" font-weight="800" fill="url(#acc)" letter-spacing="-1.5">{esc(stat)}</text>
