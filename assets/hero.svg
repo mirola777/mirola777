@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="320" viewBox="0 0 1000 320" role="img" aria-label="Mirola — software engineer on Checkout at Yuno. Medellín, Colombia.">
+<style>
+@keyframes t0{0%{transform:translateX(0)}0%{transform:translateX(0);animation-timing-function:steps(36,end)}9.500%{transform:translateX(432.0px)}20.500%{transform:translateX(432.0px);animation-timing-function:steps(36,end)}24.000%{transform:translateX(0)}100%{transform:translateX(0)}} @keyframes v0{0%{opacity:0}0.000%{opacity:1}24.000%{opacity:1}24.001%{opacity:0}100%{opacity:0}}
+.m0{animation:t0 18s infinite} .c0{animation:t0 18s infinite} .g0{animation:v0 18s infinite}
+@keyframes t1{0%{transform:translateX(0)}25.000%{transform:translateX(0);animation-timing-function:steps(30,end)}34.500%{transform:translateX(360.0px)}45.500%{transform:translateX(360.0px);animation-timing-function:steps(30,end)}49.000%{transform:translateX(0)}100%{transform:translateX(0)}} @keyframes v1{0%{opacity:0}24.999%{opacity:0}25.000%{opacity:1}49.000%{opacity:1}49.001%{opacity:0}100%{opacity:0}}
+.m1{animation:t1 18s infinite} .c1{animation:t1 18s infinite} .g1{animation:v1 18s infinite}
+@keyframes t2{0%{transform:translateX(0)}50.000%{transform:translateX(0);animation-timing-function:steps(39,end)}59.500%{transform:translateX(468.0px)}70.500%{transform:translateX(468.0px);animation-timing-function:steps(39,end)}74.000%{transform:translateX(0)}100%{transform:translateX(0)}} @keyframes v2{0%{opacity:0}49.999%{opacity:0}50.000%{opacity:1}74.000%{opacity:1}74.001%{opacity:0}100%{opacity:0}}
+.m2{animation:t2 18s infinite} .c2{animation:t2 18s infinite} .g2{animation:v2 18s infinite}
+@keyframes t3{0%{transform:translateX(0)}75.000%{transform:translateX(0);animation-timing-function:steps(44,end)}84.500%{transform:translateX(528.0px)}95.500%{transform:translateX(528.0px);animation-timing-function:steps(44,end)}99.000%{transform:translateX(0)}100%{transform:translateX(0)}} @keyframes v3{0%{opacity:0}74.999%{opacity:0}75.000%{opacity:1}99.000%{opacity:1}99.001%{opacity:0}100%{opacity:0}}
+.m3{animation:t3 18s infinite} .c3{animation:t3 18s infinite} .g3{animation:v3 18s infinite}
+@keyframes drift { 0% { transform: translate(0,0) } 50% { transform: translate(-60px,30px) } 100% { transform: translate(0,0) } }
+@keyframes drift2 { 0% { transform: translate(0,0) } 50% { transform: translate(50px,-25px) } 100% { transform: translate(0,0) } }
+@keyframes pulse { 0%,100% { opacity: 1 } 50% { opacity: .35 } }
+@keyframes rise { from { opacity: 0; transform: translateY(8px) } to { opacity: 1; transform: translateY(0) } }
+.o1 { animation: drift 14s ease-in-out infinite }
+.o2 { animation: drift2 18s ease-in-out infinite }
+.live { animation: pulse 2s ease-in-out infinite }
+.r1 { animation: rise .8s ease-out both }
+.r2 { animation: rise .8s .15s ease-out both }
+</style>
+<defs>
+  <linearGradient id="acc" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#5eead4"/>
+  </linearGradient>
+  <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+    <circle cx="1" cy="1" r="1" fill="#ffffff" fill-opacity="0.07"/>
+  </pattern>
+  <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="60"/></filter>
+  <clipPath id="panel"><rect width="1000" height="320" rx="22"/></clipPath>
+  <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0"><stop offset="0.35" stop-color="#0b0d12" stop-opacity="1"/><stop offset="1" stop-color="#0b0d12" stop-opacity="0"/></linearGradient>
+</defs>
+<g clip-path="url(#panel)">
+  <rect width="1000" height="320" fill="#0b0d12"/>
+  <rect width="1000" height="320" fill="url(#dots)"/>
+  <circle class="o1" cx="820" cy="80" r="140" fill="#a78bfa" fill-opacity="0.45" filter="url(#blur)"/>
+  <circle class="o2" cx="930" cy="260" r="120" fill="#5eead4" fill-opacity="0.22" filter="url(#blur)"/>
+  <rect width="1000" height="320" fill="url(#fade)"/>
+</g>
+<rect x="0.5" y="0.5" width="999" height="319" rx="22" fill="none" stroke="#20242f"/>
+<g class="r1">
+  <circle class="live" cx="70" cy="66" r="4" fill="#5eead4"/>
+  <text x="84" y="71" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" fill="#8a90a2" letter-spacing="1.5">MEDELLÍN, COLOMBIA</text>
+</g>
+<text class="r2" x="60" y="160" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Helvetica, Arial, sans-serif" font-size="84" font-weight="800" fill="#e8eaf0" letter-spacing="-4">mirola<tspan fill="url(#acc)">.</tspan></text>
+
+  <clipPath id="clip0"><rect class="m0" x="-368.0" y="190" width="432.0" height="34"/></clipPath>
+  <g class="g0">
+    <text x="64" y="214" clip-path="url(#clip0)" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="20" fill="#e8eaf0" textLength="432.0" lengthAdjust="spacingAndGlyphs">software engineer on checkout @ yuno</text>
+    <rect class="c0" x="66" y="195" width="10" height="23" fill="url(#acc)"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1s" repeatCount="indefinite"/></rect>
+  </g>
+  <clipPath id="clip1"><rect class="m1" x="-296.0" y="190" width="360.0" height="34"/></clipPath>
+  <g class="g1">
+    <text x="64" y="214" clip-path="url(#clip1)" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="20" fill="#e8eaf0" textLength="360.0" lengthAdjust="spacingAndGlyphs">i make payments feel invisible</text>
+    <rect class="c1" x="66" y="195" width="10" height="23" fill="url(#acc)"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1s" repeatCount="indefinite"/></rect>
+  </g>
+  <clipPath id="clip2"><rect class="m2" x="-404.0" y="190" width="468.0" height="34"/></clipPath>
+  <g class="g2">
+    <text x="64" y="214" clip-path="url(#clip2)" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="20" fill="#e8eaf0" textLength="468.0" lengthAdjust="spacingAndGlyphs">and build little apps for people i love</text>
+    <rect class="c2" x="66" y="195" width="10" height="23" fill="url(#acc)"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1s" repeatCount="indefinite"/></rect>
+  </g>
+  <clipPath id="clip3"><rect class="m3" x="-464.0" y="190" width="528.0" height="34"/></clipPath>
+  <g class="g3">
+    <text x="64" y="214" clip-path="url(#clip3)" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="20" fill="#e8eaf0" textLength="528.0" lengthAdjust="spacingAndGlyphs">go · kotlin · typescript · svelte · three.js</text>
+    <rect class="c3" x="66" y="195" width="10" height="23" fill="url(#acc)"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1s" repeatCount="indefinite"/></rect>
+  </g>
+<text x="64" y="276" font-family="ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#555b6b" letter-spacing="1">bald, occasionally programming.</text>
+</svg>
