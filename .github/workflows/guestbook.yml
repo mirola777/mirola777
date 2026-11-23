@@ -1,0 +1,51 @@
+name: guestbook
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: profile-live-branch
+  cancel-in-progress: false
+
+jobs:
+  sign:
+    if: contains(github.event.issue.title, 'sign')
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: live
+          path: live
+      - id: gb
+        name: Add signature
+        run: python3 .github/scripts/live.py guestbook live
+      - name: Publish
+        if: steps.gb.outputs.result == 'new'
+        working-directory: live
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "chore(guestbook): new signature"
+          for i in 1 2 3; do git pull -q --rebase origin live && git push -q origin HEAD:live && exit 0; sleep 3; done
+          exit 1
+      - name: Reply and close
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RESULT: ${{ steps.gb.outputs.result }}
+          ISSUE: ${{ github.event.issue.number }}
+        run: |
+          case "$RESULT" in
+            new) msg="Thanks for signing! Your avatar is now on my profile: https://github.com/${GITHUB_REPOSITORY_OWNER} (it can take a few minutes to show up because of caching)." ;;
+            dup) msg="You already signed, thank you! You are still on the wall: https://github.com/${GITHUB_REPOSITORY_OWNER}" ;;
+            *) msg="Thanks! Only personal GitHub accounts can sign the guestbook." ;;
+          esac
+          gh issue comment "$ISSUE" -R "$GITHUB_REPOSITORY" --body "$msg"
+          gh issue close "$ISSUE" -R "$GITHUB_REPOSITORY" --reason completed
