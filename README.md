@@ -2,18 +2,7 @@
 
 <br />
 
-<a href="https://unidos-por-colombia.vercel.app"><img src="https://raw.githubusercontent.com/mirola777/mirola777/live/featured.svg" width="100%" alt="Unidos por Colombia: a collaborative map of aid points after the 2026 earthquake" /></a>
-
-<p>
-  <a href="https://mirola-pdf-editor.vercel.app"><img src="./assets/pdf-editor.svg" width="49%" alt="PDF Editor: free, 100% client-side PDF editor" /></a>
-  <a href="https://mirola-grid-maker.vercel.app"><img src="./assets/grid-maker.svg" width="49%" alt="Grid Maker: drawing-grid overlay for artists" /></a>
-</p>
-
 <img src="https://raw.githubusercontent.com/mirola777/mirola777/live/live.svg" width="100%" alt="Live panel: aid points on Unidos por Colombia and my latest public GitHub activity, refreshed every 30 minutes" />
-
-<br />
-
-<img src="./assets/lab.svg" width="100%" alt="Private lab: blackjack-2000, el-parche, william-english, alexa-ai, slop-factory, claude-plugin" />
 
 <br />
 
@@ -28,5 +17,16 @@
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/mirola777/mirola777/output/snake-light.svg" />
   <img alt="contribution snake" src="https://raw.githubusercontent.com/mirola777/mirola777/output/snake-dark.svg" width="100%" />
 </picture>
+
+<br />
+
+<a href="https://unidos-por-colombia.vercel.app"><img src="https://raw.githubusercontent.com/mirola777/mirola777/live/featured.svg" width="100%" alt="Unidos por Colombia: a collaborative map of aid points after the 2026 earthquake" /></a>
+
+<p>
+  <a href="https://mirola-pdf-editor.vercel.app"><img src="./assets/pdf-editor.svg" width="49%" alt="PDF Editor: free, 100% client-side PDF editor" /></a>
+  <a href="https://mirola-grid-maker.vercel.app"><img src="./assets/grid-maker.svg" width="49%" alt="Grid Maker: drawing-grid overlay for artists" /></a>
+</p>
+
+<img src="./assets/lab.svg" width="100%" alt="Private lab: blackjack-2000, el-parche, william-english, alexa-ai, slop-factory, claude-plugin" />
 
 <p align="center"><sub>building payments by day, tiny apps by night &nbsp;·&nbsp; medellín, co</sub></p>
